@@ -18,12 +18,12 @@ Gets list of your investments
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountApi()
+api_instance = bondora_api.AccountApi()
 request_loan_issued_date_from = '2013-10-20T19:20:30+01:00' # datetime | Loan issued start date from (optional)
 request_loan_issued_date_to = '2013-10-20T19:20:30+01:00' # datetime | Loan issued start date to (optional)
 request_principal_min = 1.2 # float | Remaining principal amount min (optional)
@@ -146,12 +146,12 @@ Gets your account balance information
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountApi()
+api_instance = bondora_api.AccountApi()
 
 try:
     # Gets your account balance information
@@ -188,12 +188,12 @@ Gets events that have been made with this application (related to current access
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountApi()
+api_instance = bondora_api.AccountApi()
 request_event_date_from = '2013-10-20T19:20:30+01:00' # datetime | Start datetime (optional)
 request_event_date_to = '2013-10-20T19:20:30+01:00' # datetime | end datetime (optional)
 request_event_type = 56 # int | Event type (optional)

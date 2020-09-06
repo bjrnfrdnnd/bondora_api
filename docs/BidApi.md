@@ -19,12 +19,12 @@ Cancel the Bid
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BidApi()
+api_instance = bondora_api.BidApi()
 id = 'id_example' # str | Bid identificator
 
 try:
@@ -65,12 +65,12 @@ Get the Bid
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BidApi()
+api_instance = bondora_api.BidApi()
 id = 'id_example' # str | Bid identificator
 
 try:
@@ -111,12 +111,12 @@ Gets list of bids the investor has made.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BidApi()
+api_instance = bondora_api.BidApi()
 request_bid_status_code = 56 # int | Bid status code (optional)
 request_start_date = '2013-10-20T19:20:30+01:00' # datetime | Start date (optional)
 request_end_date = '2013-10-20T19:20:30+01:00' # datetime | End date (optional)
@@ -165,13 +165,13 @@ Makes bid(s) into specified auction(s).
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BidApi()
-bid_request = swagger_client.BidRequest() # BidRequest | 
+api_instance = bondora_api.BidApi()
+bid_request = bondora_api.BidRequest() # BidRequest | 
 
 try:
     # Makes bid(s) into specified auction(s).

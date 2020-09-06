@@ -19,13 +19,13 @@ Request to generate specified report type for set period.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReportApi()
-request = swagger_client.ReportCreateRequest() # ReportCreateRequest | 
+api_instance = bondora_api.ReportApi()
+request = bondora_api.ReportCreateRequest() # ReportCreateRequest | 
 
 try:
     # Request to generate specified report type for set period.
@@ -65,12 +65,12 @@ Provides daily public dataset of all loan data that is not covered by the data p
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReportApi()
+api_instance = bondora_api.ReportApi()
 request_loan_ids = ['request_loan_ids_example'] # list[str] | Specific loans to search (optional)
 request_countries = ['request_countries_example'] # list[str] | Two letter iso code for country of origin: EE, ES, FI (optional)
 request_ratings = ['request_ratings_example'] # list[str] | Bondora's rating: AA, A, B, C, D, E, F, HR (optional)
@@ -123,12 +123,12 @@ Get report data for specified report identificator.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReportApi()
+api_instance = bondora_api.ReportApi()
 id = 'id_example' # str | ReportId
 
 try:
@@ -169,12 +169,12 @@ List of all reports
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReportApi()
+api_instance = bondora_api.ReportApi()
 
 try:
     # List of all reports

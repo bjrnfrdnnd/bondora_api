@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.bid_api import BidApi  # noqa: E501
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.api.bid_api import BidApi  # noqa: E501
+from bondora_api.rest import ApiException
 
 
 class TestBidApi(unittest.TestCase):
     """BidApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.bid_api.BidApi()  # noqa: E501
+        self.api = bondora_api.api.bid_api.BidApi()  # noqa: E501
 
     def tearDown(self):
         pass

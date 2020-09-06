@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.second_market_api import SecondMarketApi  # noqa: E501
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.api.second_market_api import SecondMarketApi  # noqa: E501
+from bondora_api.rest import ApiException
 
 
 class TestSecondMarketApi(unittest.TestCase):
     """SecondMarketApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.second_market_api.SecondMarketApi()  # noqa: E501
+        self.api = bondora_api.api.second_market_api.SecondMarketApi()  # noqa: E501
 
     def tearDown(self):
         pass

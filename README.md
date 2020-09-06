@@ -24,7 +24,7 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 
 Then import the package:
 ```python
-import swagger_client 
+import bondora_api 
 ```
 
 ### Setuptools
@@ -38,7 +38,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import swagger_client
+import bondora_api
 ```
 
 ## Getting Started
@@ -48,12 +48,12 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountApi(swagger_client.ApiClient(configuration))
+api_instance = bondora_api.AccountApi(bondora_api.ApiClient(configuration))
 request_loan_issued_date_from = '2013-10-20T19:20:30+01:00' # datetime | Loan issued start date from (optional)
 request_loan_issued_date_to = '2013-10-20T19:20:30+01:00' # datetime | Loan issued start date to (optional)
 request_principal_min = 1.2 # float | Remaining principal amount min (optional)

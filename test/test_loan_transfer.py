@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.loan_transfer import LoanTransfer  # noqa: E501
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.models.loan_transfer import LoanTransfer  # noqa: E501
+from bondora_api.rest import ApiException
 
 
 class TestLoanTransfer(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestLoanTransfer(unittest.TestCase):
     def testLoanTransfer(self):
         """Test LoanTransfer"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.loan_transfer.LoanTransfer()  # noqa: E501
+        # model = bondora_api.models.loan_transfer.LoanTransfer()  # noqa: E501
         pass
 
 

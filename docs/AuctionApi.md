@@ -17,12 +17,12 @@ Gets Auction info by auction identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AuctionApi()
+api_instance = bondora_api.AuctionApi()
 id = 'id_example' # str | Auction's identifier
 
 try:
@@ -63,12 +63,12 @@ Gets list of active Auctions
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AuctionApi()
+api_instance = bondora_api.AuctionApi()
 request_countries = ['request_countries_example'] # list[str] | Two letter iso code for country of origin: EE, ES, FI (optional)
 request_ratings = ['request_ratings_example'] # list[str] | Bondora's rating: AA, A, B, C, D, E, F, HR (optional)
 request_gender = 56 # int | Borrower's gender: Male 0, Female 1, Unknown 2 (optional)

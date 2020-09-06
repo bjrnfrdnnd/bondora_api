@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.report import Report  # noqa: E501
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.models.report import Report  # noqa: E501
+from bondora_api.rest import ApiException
 
 
 class TestReport(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestReport(unittest.TestCase):
     def testReport(self):
         """Test Report"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.report.Report()  # noqa: E501
+        # model = bondora_api.models.report.Report()  # noqa: E501
         pass
 
 

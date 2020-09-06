@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.api_result_make_bids import ApiResultMakeBids  # noqa: E501
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.models.api_result_make_bids import ApiResultMakeBids  # noqa: E501
+from bondora_api.rest import ApiException
 
 
 class TestApiResultMakeBids(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestApiResultMakeBids(unittest.TestCase):
     def testApiResultMakeBids(self):
         """Test ApiResultMakeBids"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.api_result_make_bids.ApiResultMakeBids()  # noqa: E501
+        # model = bondora_api.models.api_result_make_bids.ApiResultMakeBids()  # noqa: E501
         pass
 
 

@@ -26,13 +26,13 @@ Buy loans from secondary market.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SecondMarketApi()
-buy_request = swagger_client.SecondMarketBuyRequest() # SecondMarketBuyRequest | 
+api_instance = bondora_api.SecondMarketApi()
+buy_request = bondora_api.SecondMarketBuyRequest() # SecondMarketBuyRequest | 
 
 try:
     # Buy loans from secondary market.
@@ -72,12 +72,12 @@ Remove your loans from secondary market.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SecondMarketApi()
+api_instance = bondora_api.SecondMarketApi()
 id = 'id_example' # str | 
 
 try:
@@ -118,13 +118,13 @@ Remove your loans from secondary market.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SecondMarketApi()
-cancel_request = swagger_client.SecondMarketCancelRequest() # SecondMarketCancelRequest | 
+api_instance = bondora_api.SecondMarketApi()
+cancel_request = bondora_api.SecondMarketCancelRequest() # SecondMarketCancelRequest | 
 
 try:
     # Remove your loans from secondary market.
@@ -164,12 +164,12 @@ Gets LoanPartDetails info by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SecondMarketApi()
+api_instance = bondora_api.SecondMarketApi()
 id = 'id_example' # str | LoanPartDetails's identifier
 
 try:
@@ -210,12 +210,12 @@ Gets list of active secondary market items
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SecondMarketApi()
+api_instance = bondora_api.SecondMarketApi()
 request_loan_issued_date_from = '2013-10-20T19:20:30+01:00' # datetime | Loan issued start date from (optional)
 request_loan_issued_date_to = '2013-10-20T19:20:30+01:00' # datetime | Loan issued start date to (optional)
 request_principal_min = 1.2 # float | Remaining principal amount min (optional)
@@ -354,12 +354,12 @@ Get the secondary market item summary
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SecondMarketApi()
+api_instance = bondora_api.SecondMarketApi()
 id = 'id_example' # str | SecondaryMarket item identificator
 
 try:
@@ -400,13 +400,13 @@ Get the secondary market item summaries in a list
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SecondMarketApi()
-request = swagger_client.SecondMarketListingRequest() # SecondMarketListingRequest | SecondaryMarket item identificators.              This endpoint supports both GET and POST methods.              If using this endpoint with the GET method the request data must be sent with the request body, even though it is a GET request.              The \"Content-Type\" header must be set so the server knows how to decode the data.
+api_instance = bondora_api.SecondMarketApi()
+request = bondora_api.SecondMarketListingRequest() # SecondMarketListingRequest | SecondaryMarket item identificators.              This endpoint supports both GET and POST methods.              If using this endpoint with the GET method the request data must be sent with the request body, even though it is a GET request.              The \"Content-Type\" header must be set so the server knows how to decode the data.
 
 try:
     # Get the secondary market item summaries in a list
@@ -446,13 +446,13 @@ Get the secondary market item summaries in a list
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SecondMarketApi()
-request = swagger_client.SecondMarketListingRequest() # SecondMarketListingRequest | SecondaryMarket item identificators.              This endpoint supports both GET and POST methods.              If using this endpoint with the GET method the request data must be sent with the request body, even though it is a GET request.              The \"Content-Type\" header must be set so the server knows how to decode the data.
+api_instance = bondora_api.SecondMarketApi()
+request = bondora_api.SecondMarketListingRequest() # SecondMarketListingRequest | SecondaryMarket item identificators.              This endpoint supports both GET and POST methods.              If using this endpoint with the GET method the request data must be sent with the request body, even though it is a GET request.              The \"Content-Type\" header must be set so the server knows how to decode the data.
 
 try:
     # Get the secondary market item summaries in a list
@@ -492,13 +492,13 @@ Gets LoanPartDetails info by identifiers in a list (up to 1000 items).
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SecondMarketApi()
-request = swagger_client.LoanPartDetailsRequest() # LoanPartDetailsRequest | LoanPartDetails identifiers list.              This endpoint supports both GET and POST methods.              If using this endpoint with the GET method the request data must be sent with the request body, even though it is a GET request.              The \"Content-Type\" header must be set so the server knows how to decode the data.
+api_instance = bondora_api.SecondMarketApi()
+request = bondora_api.LoanPartDetailsRequest() # LoanPartDetailsRequest | LoanPartDetails identifiers list.              This endpoint supports both GET and POST methods.              If using this endpoint with the GET method the request data must be sent with the request body, even though it is a GET request.              The \"Content-Type\" header must be set so the server knows how to decode the data.
 
 try:
     # Gets LoanPartDetails info by identifiers in a list (up to 1000 items).
@@ -538,13 +538,13 @@ Gets LoanPartDetails info by identifiers in a list (up to 1000 items).
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SecondMarketApi()
-request = swagger_client.LoanPartDetailsRequest() # LoanPartDetailsRequest | LoanPartDetails identifiers list.              This endpoint supports both GET and POST methods.              If using this endpoint with the GET method the request data must be sent with the request body, even though it is a GET request.              The \"Content-Type\" header must be set so the server knows how to decode the data.
+api_instance = bondora_api.SecondMarketApi()
+request = bondora_api.LoanPartDetailsRequest() # LoanPartDetailsRequest | LoanPartDetails identifiers list.              This endpoint supports both GET and POST methods.              If using this endpoint with the GET method the request data must be sent with the request body, even though it is a GET request.              The \"Content-Type\" header must be set so the server knows how to decode the data.
 
 try:
     # Gets LoanPartDetails info by identifiers in a list (up to 1000 items).
@@ -584,13 +584,13 @@ Sell your loans to secondary market.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bondora_api
+from bondora_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SecondMarketApi()
-sale_request = swagger_client.SecondMarketSaleRequest() # SecondMarketSaleRequest | 
+api_instance = bondora_api.SecondMarketApi()
+sale_request = bondora_api.SecondMarketSaleRequest() # SecondMarketSaleRequest | 
 
 try:
     # Sell your loans to secondary market.
