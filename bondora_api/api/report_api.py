@@ -112,7 +112,7 @@ class ReportApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['apiKey']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/report', 'POST',
@@ -236,7 +236,7 @@ class ReportApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['apiKey']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/publicdataset', 'GET',
@@ -329,7 +329,7 @@ class ReportApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['apiKey']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/report/{id}', 'GET',
@@ -414,7 +414,7 @@ class ReportApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['apiKey']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/reports', 'GET',
