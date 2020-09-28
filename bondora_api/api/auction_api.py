@@ -108,7 +108,7 @@ class AuctionApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['apiKey']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/auction/{id}', 'GET',
@@ -309,7 +309,7 @@ class AuctionApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['apiKey']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/auctions', 'GET',
