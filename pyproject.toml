@@ -6,7 +6,7 @@ authors = ["Björn Nadrowski <bjrnfrdnnd@gmail.com>"]
 repository = 'https://github.com/bjrnfrdnnd/bondora_api'
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 six = ">=1.16.0"
 urllib3 = ">=1.26.9"
 pandas = "^2"
